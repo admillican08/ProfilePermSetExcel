@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Note, this works with a version of the Salesforce Metadata API that is 23 or later -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Profile">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="applicationVisibilities" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="application"/>
+							<xs:element type="xs:boolean" name="default"/>
+							<xs:element type="xs:boolean" name="visible"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+							
+				<xs:element name="categoryGroupVisibilities" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="dataCategories" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element type="xs:string" name="dataCategoryGroup"/>
+										<xs:element type="xs:string" name="visibility"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="classAccesses" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="apexClass"/>
+							<xs:element type="xs:boolean" name="enabled"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element type="xs:boolean" name="custom" minOccurs="0"/>
+				
+				
+				<xs:element name="customPermissions" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="enabled"/>
+							<xs:element type="xs:string" name="name"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element type="xs:string" name="description" minOccurs="0"/>
+				
+				
+				<xs:element name="externalDataSourceAccesses" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="enabled"/>
+							<xs:element type="xs:string" name="externalDataSource"  minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="fieldPermissions" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="editable"/>
+							<xs:element type="xs:string" name="field"/>
+							<xs:element type="xs:boolean" name="readable"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element type="xs:string" name="fullName" minOccurs="0"/>
+				
+				
+				<xs:element name="layoutAssignments" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="layout"/>
+							<xs:element type="xs:string" name="recordType" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="loginHours" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="weekdayStart"/>
+							<xs:element type="xs:string" name="weekdayEnd"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="loginIpRanges" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="description"/>
+							<xs:element type="xs:string" name="endAddress"/>
+							<xs:element type="xs:string" name="startAddress"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="objectPermissions" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="allowCreate"/>
+							<xs:element type="xs:boolean" name="allowDelete"/>
+							<xs:element type="xs:boolean" name="allowEdit"/>
+							<xs:element type="xs:boolean" name="allowRead"/>
+							<xs:element type="xs:boolean" name="modifyAllRecords"/>
+							<xs:element type="xs:string" name="object"/>
+							<xs:element type="xs:boolean" name="viewAllRecords"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="pageAccesses" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="apexPage"/>
+							<xs:element type="xs:boolean" name="enabled"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="profileActionOverrides" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="actionName"/>
+							<xs:element type="xs:string" name="content" minOccurs="0"/>
+							<xs:element type="xs:string" name="formFactor"/>
+							<xs:element type="xs:string" name="pageOrSobjectType"/>
+							<xs:element type="xs:string" name="type"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="recordTypeVisibilities" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="default"/>
+							<xs:element type="xs:boolean" name="personAccountDefault" minOccurs="0"/>
+							<xs:element type="xs:string" name="recordType"/>
+							<xs:element type="xs:boolean" name="visible"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element name="tabVisibilities" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="tab"/>
+							<xs:element type="xs:string" name="visibility"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+				<xs:element type="xs:string" name="userLicense" />
+				
+				
+				<xs:element name="userPermissions" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:boolean" name="enabled"/>
+							<xs:element type="xs:string" name="name"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
