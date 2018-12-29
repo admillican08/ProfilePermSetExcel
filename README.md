@@ -4,13 +4,13 @@ Use the ProfilePermSetImportWkbk.xlsm Macro-Enabled Microsoft Excel workbook to 
 
 
 
-1) Required Versions of Applications:
+*) Required Versions of Applications:
 
 Salesforce Metadata API Version 23 or later, Microsoft Excel version 2007 or later (any version using .xlsx)
 
 
 
-2) What This Workbook Lets You Do
+*) What This Workbook Lets You Do
 
 This template helps to make Salesforce profile and permission set data easier to work with. It has mappings and macros to pull in XML data from Salesforce profile and permission set metadata component files. 
 
@@ -22,7 +22,7 @@ If you're skilled with handling Salesforce metadata and XML, you may be able to 
 
 
 
-3) Files Included:
+*) Files Included:
 
 * The macro-enabled Excel workbook ProfilePermSetImportWkbk.xlsm
 * Profiles.xsd (the Salesforce Profile Schema file) -- required for Profiles
@@ -35,7 +35,7 @@ If you're skilled with handling Salesforce metadata and XML, you may be able to 
 
 
 
-4) OK, So How Do I Use This Thing?
+*) OK, So How Do I Use This Thing?
 
 1) Make sure you have your .xsd files and some .profiles or .permissionsets handy on your PC.
 2) Open the ProfilePermSetImportWkbk.xlsm in Microsoft Excel version 2007 or later.
@@ -46,19 +46,19 @@ If, for some reason, they keystroke Ctrl + Shift + U fails to work, display the 
 
 
 
-4) Macro Security Issues:
+*) Macro Security Issues:
 
 Depending on your Excel and PC security settings, you may have to click a button to allow the macros in this template to run. If your security settings are strict enough, you may not be able to run macros from an outside party at all. You may be able to change them by displaying the Excel Developer tab if it is not already visible, then selecting Macro Security, and changing the macro settings to "Disable all macros with notification", which still typically gives the option to enable macros by clicking a button.
 
 
 
-4) Showing the Microsoft Excel Developer Tab:
+*) Showing the Microsoft Excel Developer Tab:
 
 From the main menu, select File > Options to open the Excel Options dialog box. Select Customize Ribbon. Select Main Tabs from the right drop-down menu, and select the Developer check box.
 
 
 
-5) Re-creating the Template If Security Won't Let Me Use Macros From Outside:
+*) Re-creating the Template If Security Won't Let Me Use Macros From Outside:
 
 If you are unable to run macros from this template because it originates from an outside source, then you should be able to re-create your own version of this template on your own PC in Excel using the two exported VBA text files included with this project:
 
