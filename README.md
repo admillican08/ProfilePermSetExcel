@@ -1,6 +1,6 @@
 Hello all!
 
-Use the ProfilePermSetImportWkbk.xlsm Macro-Enabled Microsoft Excel workbook to import data from Salesforce Profiles and Permission Sets to view it in a human-friendly way. This allows you to view, filter, and compare the data in a much easier way than the Salesforce UI provides. While there are many handy browser extensions that allow you to compare profiles and permission sets, there are, to my knowledge, no free tools that allow you to reports with actual data that can be manipulated and compared...until now!
+Use the ProfilePermSetImportExportWkbk.xlsm Macro-Enabled Microsoft Excel workbook to export and import data to and from Salesforce Profiles and Permission Sets using Microsoft Excel. This allows you to view, filter, and compare the data in a much more human-friendly way than the Salesforce UI provides. While there are many handy Web browser extensions that allow you to compare profiles and permission sets, there are, to my knowledge, no free tools that allow you to reports with actual data that can be manipulated and compared...until now!
 
 
 
@@ -12,19 +12,16 @@ Salesforce Metadata API Version 23 or later, Microsoft Excel version 2007 or lat
 
 *) What This Workbook Lets You Do
 
-This template helps to make Salesforce profile and permission set data easier to work with. It has mappings and macros to pull in XML data from Salesforce profile and permission set metadata component files. 
+This template helps to make Salesforce profile and permission set data easier to work with. It has mappings and macros to pull in XML data from Salesforce profile and permission set metadata component files. You can also use macros in the workbook to create and export profiles and permission sets from Excel, albeit please do this with caution. Please note that you may have to do further validation and alteration of any profile created and exported using this workbook before you can successfully deploy it to Salesforce.
 
-The files it acts on are Salesforce metadata component files have been previously retrieved from Salesforce using tools such as the Ant Migration Tool .jar, the Eclipse Force.com IDE plugin, or the Visual Studio Code Salesforce extension pack. The file extensions of these XML files should be .profile, .permissionset, .profile--meta.xml, or .permissionset-meta.xml.
+The Excel macro-enabled Workbook acts on are Salesforce metadata component files have been previously retrieved from Salesforce using tools such as the Ant Migration Tool .jar, the Eclipse Force.com IDE plugin, or the Visual Studio Code Salesforce extension pack. The file extensions of these XML files should be .profile, .permissionset, .profile--meta.xml, or .permissionset-meta.xml.
 
 Please note this Excel workbook does not connect directly with Salesforce in any way. Either you or a friendly Salesforce Administrator or Developer for your org must have already retrieved the profile or permission set files from Salesforce prior to using this macro-enabled workbook.
-
-If you're skilled with handling Salesforce metadata and XML, you may be able to make changes in the Excel workbooks and export the XML data to then deploy to your Salesforce org. Note that you must change the namespace back to "http://soap.sforce.com/2006/04/metadata" on any exported metadata file. It is suggested that you do further examination and validation of any metadata files you wish to deploy to your org prior to attempting deployment. Be warned that Salesforce is finicky about its XML. I have had success changing field settings using exported metadata from Excel, but not user permissions. Look for export functionality in a later release....
-
 
 
 *) Files Included:
 
-* The macro-enabled Excel workbook ProfilePermSetImportWkbk.xlsm
+* The macro-enabled Excel workbook ProfilePermSetImportExportWkbk.xlsm
 * Profiles.xsd (the Salesforce Profile Schema file) -- required for Profiles
 * PermissionSet.xsd (the Salesforce Permission Set Schema file) -- required for Permission Sets
 * ImportSfdcMetadata.bas
@@ -76,5 +73,5 @@ Happy using, and please let me know what you think, what bugs you found, and so 
 
 Adrienne D. Millican
 3X Certified Salesforce Professional
-29 Dec 2018
+13 March 2019
 admillican08@gmail.com
