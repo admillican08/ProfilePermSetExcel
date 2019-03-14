@@ -73,6 +73,9 @@ Happy using, and please let me know what you think, what bugs you found, and so 
 
 
 Adrienne D. Millican
+
 3X Certified Salesforce Professional
+
 13 March 2019
+
 admillican08@gmail.com
