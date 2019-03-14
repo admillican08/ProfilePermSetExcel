@@ -72,6 +72,9 @@ If you are unable to run macros from this template because it originates from an
 Happy using, and please let me know what you think, what bugs you found, and so on!
 
 Adrienne D. Millican
+
 3X Certified Salesforce Professional
+
 13 March 2019
+
 admillican08@gmail.com
