@@ -1,6 +1,6 @@
 Hello all!
 
-Use the ProfilePermSetImportExportWkbk.xlsm Macro-Enabled Microsoft Excel workbook to export and import data to and from Salesforce Profiles and Permission Sets using Microsoft Excel. This allows you to view, filter, and compare the data in a much more human-friendly way than the Salesforce UI provides. While there are many handy Web browser extensions that allow you to compare profiles and permission sets, there are, to my knowledge, no free tools that allow you to reports with actual data that can be manipulated and compared...until now!
+Use the ProfilePermSetImportExport.xlsm Macro-Enabled Microsoft Excel workbook to export and import data to and from Salesforce Profiles and Permission Sets using Microsoft Excel. This allows you to view, filter, and compare the data in a much more human-friendly way than the Salesforce UI provides. While there are many handy Web browser extensions that allow you to compare profiles and permission sets, there are, to my knowledge, no free tools that allow you to reports with actual data that can be manipulated and compared...until now!
 
 
 
@@ -21,7 +21,7 @@ Please note this Excel workbook does not connect directly with Salesforce in any
 
 *) Files Included:
 
-* The macro-enabled Excel workbook ProfilePermSetImportExportWkbk.xlsm
+* The macro-enabled Excel workbook ProfilePermSetImportExport.xlsm
 * Profiles.xsd (the Salesforce Profile Schema file) -- required for Profiles
 * PermissionSet.xsd (the Salesforce Permission Set Schema file) -- required for Permission Sets
 * ImportSfdcMetadata.bas
